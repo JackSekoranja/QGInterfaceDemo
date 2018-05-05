@@ -1,13 +1,41 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>QG Interface Demo</title>
+    <link rel="stylesheet" href="static/css/layout.css" type="text/css">
+    <title>QuestaVision Interface Demo</title>
 </head>
 
 <body>
-    <div id="root"></div>
-
-    <script type="text/javascript" src="dist/bundle.js"></script>
+<div class="wrapper row1">
+    <header id="header" class="clear">
+        <div id="title">
+            <h1>QuestaVision</h1>
+        </div>
+    </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+    <div id="container" class="clear">
+        <!-- main content -->
+        <div id="root"></div>
+        <!-- Interface code spawns here -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmTtEA8q1d_WJhRahhqB42BdskzNKB__4&v=3.exp&libraries=geometry,drawing,places"></script>
+        <script type="text/javascript" src="static/js/bundle.js"></script>
+    </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+    <footer id="footer" class="clear">
+        <table id="footer_table">
+            <tr>
+                <th id="col1">Copyright &copy 2018 <a href="https://www.questagame.com" title="questagame website" target="_blank">QuestaGame</a> - All Rights Reserved</th>
+                <th id="col2"><a href="https://www.questagame.com" title="Questagame website" target="_blank"><img id="qg" src="static/src/questalogo.png" alt="questagame logo"></a></th>
+                <th id="col3"><a href="https://cs.anu.edu.au/TechLauncher/" title="ANU TechLauncher website" target="_blank"><img id="anu" src="static/src/anulogo.png" alt="ANU logo"></a></th>
+                <th id="col4">Version: 1.2</th>
+            </tr>
+        </table>
+    </footer>
+</div>
 </body>
 
 <!--
